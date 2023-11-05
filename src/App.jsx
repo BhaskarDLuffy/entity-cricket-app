@@ -30,6 +30,8 @@ const App = () => {
     </div>
   )
 
+  console.log("match data", ",", typeof(matchData), ",",matchData)
+
   return (
     <div>
       <div className='flex justify-start items-center border-2 gap-[5rem] p-5'>
@@ -59,6 +61,10 @@ const App = () => {
           </div>
         </div>
       </div>
+      <br />
+      {/* <div className='bg-blue-500 w-full h-[8rem]'>
+        <div className='bg-[#dcdce4] w-full h-[7rem]'></div>
+      </div> */}
     </div>
   )
 }
