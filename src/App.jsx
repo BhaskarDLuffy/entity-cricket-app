@@ -43,7 +43,7 @@ console.log(fecthEntityMatchdata.status)
           <div>
           {matchData.live.batsmen.map((striker)=>(
             <div key={striker.name} className='text-left'>
-              *{striker.name}
+              <span className='font-bold text-[1.2rem] me-2'>*</span>{striker.name}
             </div>
           ))}
           </div>
@@ -53,7 +53,7 @@ console.log(fecthEntityMatchdata.status)
           <div>
           {matchData.live.bowlers.map((bowler)=>(
             <div key={bowler.name}>
-                *{bowler.name}
+                <span className='font-bold text-[1.2rem] me-2'>*</span>{bowler.name}
             </div>
           ))}
           </div>
