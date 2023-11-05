@@ -19,7 +19,7 @@ const App = () => {
     refetchOnWindowFocus: false,
     refetchOnMount: true,
     refetchOnReconnect: true,
-    refetchInterval: 1000
+    refetchInterval: 0
   })
   console.log(fecthEntityMatchdata.status)
   if (fecthEntityMatchdata.status == 'pending') return (
