@@ -33,17 +33,17 @@ console.log(fecthEntityMatchdata.status)
   return (
     <div>
       <div className='flex justify-start items-center border-2 gap-[5rem] p-5'>
-        <div className=''><b>{matchData["match_info"].teama.name}</b> - <span className='text-[aqua] font-semibold'>score:</span> {matchData["match_info"].teama.scores} - <span className='text-[aqua] font-semibold'>overs:</span> {matchData["match_info"].teama.overs}</div>
-        <div className=''><b>{matchData["match_info"].teamb.name}</b> - <span className='text-[aqua] font-semibold'>score:</span> {matchData["match_info"]?.teamb.scores} - <span className='text-[aqua] font-semibold'>overs:</span> {matchData["match_info"]?.teamb.overs}</div>
+        <div className=''><b>{matchData["match_info"].teama.name}</b> <br /> <span className='text-[aqua] font-semibold'>score:</span> {matchData["match_info"].teama.scores} <br /> <span className='text-[aqua] font-semibold'>overs:</span> {matchData["match_info"].teama.overs}</div>
+        <div className=''><b>{matchData["match_info"].teamb.name}</b> <br /> <span className='text-[aqua] font-semibold'>score:</span> {matchData["match_info"]?.teamb.scores} <br /> <span className='text-[aqua] font-semibold'>overs:</span> {matchData["match_info"]?.teamb.overs}</div>
       </div>
       <br />
-      <div className='flex justify-center items-center border-2 gap-[5rem] p-5'>
+      <div className='flex justify-center items-center border-2 gap-[3rem] p-5'>
         <div className='flex flex-col justify-center items-start'>
           <h3 className='font-bold'>Batsmans:</h3>
           <div>
           {matchData.live.batsmen.map((striker)=>(
             <div key={striker.name} className='text-left'>
-              {striker.name}
+              *{striker.name}
             </div>
           ))}
           </div>
@@ -53,7 +53,7 @@ console.log(fecthEntityMatchdata.status)
           <div>
           {matchData.live.bowlers.map((bowler)=>(
             <div key={bowler.name}>
-                {bowler.name}
+                *{bowler.name}
             </div>
           ))}
           </div>
