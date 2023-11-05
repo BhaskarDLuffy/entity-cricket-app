@@ -19,7 +19,7 @@ const App = () => {
     refetchOnWindowFocus: false,
     refetchOnMount: true,
     refetchOnReconnect: true,
-    refetchInterval: 10000
+    refetchInterval: 1000
   })
   console.log(fecthEntityMatchdata.status)
   if (fecthEntityMatchdata.status == 'pending') return (
@@ -33,8 +33,8 @@ const App = () => {
   return (
     <div>
       <div className='flex justify-start items-center border-2 gap-[5rem] p-5'>
-        <div className=''><b>{matchData["match_info"].teama.name}</b> <br /> <span className='font-semibold'>score:</span> {matchData["match_info"].teama.scores} <br /> <span className='text-[aqua] font-semibold'>overs:</span> {matchData["match_info"].teama.overs}</div>
-        <div className=''><b>{matchData["match_info"].teamb.name}</b> <br /> <span className='font-semibold'>score:</span> {matchData["match_info"]?.teamb.scores} <br /> <span className='text-[aqua] font-semibold'>overs:</span> {matchData["match_info"]?.teamb.overs}</div>
+        <div className=''><b>{matchData["match_info"].teama.name}</b> <br /> <span className='font-semibold'>score:</span> {matchData["match_info"].teama.scores} <br /> <span className='font-semibold'>overs:</span> {matchData["match_info"].teama.overs}</div>
+        <div className=''><b>{matchData["match_info"].teamb.name}</b> <br /> <span className='font-semibold'>score:</span> {matchData["match_info"]?.teamb.scores} <br /> <span className='font-semibold'>overs:</span> {matchData["match_info"]?.teamb.overs}</div>
       </div>
       <br />
       <div className='flex justify-center items-center border-2 gap-[3rem] p-5'>
