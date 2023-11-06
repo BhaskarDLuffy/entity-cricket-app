@@ -19,7 +19,7 @@ const App = () => {
     refetchOnWindowFocus: false,
     refetchOnMount: true,
     refetchOnReconnect: true,
-    refetchInterval: 0
+    refetchInterval: 1000
   })
   console.log(fecthEntityMatchdata.status)
   if (fecthEntityMatchdata.status == 'pending') return (
@@ -62,9 +62,9 @@ const App = () => {
         </div>
       </div>
       <br />
-      {/* <div className='bg-blue-500 w-full h-[8rem]'>
-        <div className='bg-[#dcdce4] w-full h-[7rem]'></div>
-      </div> */}
+      <div className='bg-[#30005A] w-full h-[8rem] p-3'>
+        <div className='bg__blur_effect w-full h-[7rem]'></div>
+      </div>
     </div>
   )
 }
